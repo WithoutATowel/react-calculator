@@ -14,7 +14,7 @@ class Calculator extends Component {
 
     handleChange(e) {
         let newState = {}
-        newState[e.target.id] = parseInt(e.target.value)
+        newState[e.target.id] = parseFloat(e.target.value)
         this.setState(newState, this.updateResult)
     }
 
